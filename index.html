@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheCode</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/01a87deee0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="src/style.css">
+  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="main-wrap">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="popular-city-list">
+            <ul>
+              <li>Stockholm</li>
+              <li>Lyon</li>
+              <li>Warsaw</li>
+              <li>Belgrade</li>
+            </ul>
+          </div>
+        </div> 
+        <div class="col-12">
+          <form action="#" class="form form-white" id="form-search-city">
+            <div class="row">
+              <div class="col-8">
+                <input class="form-control" type="text" placeholder="Enter city" id="input-city">
+              </div>
+              <div class="col-2">
+                <button type="submit" class="btn btn-primary btn-own">Search</button>
+              </div>
+              <div class="col-2">
+                <button type="submit" class="btn btn-primary btn-own" id="current-city-btn">Current</button>
+              </div>   
+            </div>
+          </form>        
+        </div>
+        <div class="col-12">
+          <div class="weather-box">
+            <div class="city-name text-center" id="city-name">Kyiv</div>
+            <div class="date text-center" id="current-date"><span class="day">Monday</span>, <span class="time">18:45</span></div> 
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <div class="float-start text-center">
+                    <div class="icon-current-weather">
+                      <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="weather-text" id="city-weather-text">
+                      Cloud
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="current-temperature text-center">
+                    <span id="temp-data">14</span><span>°</span><!--<span class="unit-switcher"><a href="#" class="bordered" id="temp-c">C</a> | <a href="#" id="temp-f">F</a></span>-->
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="float-end text-center">
+                    <div class="air-humidity">
+                      <i class="fas fa-tint"></i>
+                      <span id="humidity">47</span>%
+                    </div>
+                    <div class="wind-speed">
+                      <i class="fas fa-wind"></i>
+                      <span id="wind">2</span> km/h
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="divider"></div>
+        </div>
+        <div class="col-12">
+          <div class="weather-week-box d-flex justify-content-between">
+            <div class="weather-day">
+              <div class="day">Tue</div>
+              <div class="icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="temperature">
+                15°C
+              </div>
+            </div>
+            <div class="weather-day">
+              <div class="day">Wed</div>
+              <div class="icon">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <div class="temperature">
+                17°C
+              </div>
+            </div>
+            <div class="weather-day">
+              <div class="day">Thu</div>
+              <div class="icon">
+                <i class="fas fa-sun"></i>
+              </div>
+              <div class="temperature">
+                21°C
+              </div>
+            </div>
+            <div class="weather-day">
+              <div class="day">Fri</div>
+              <div class="icon">
+                <i class="fas fa-sun"></i>
+              </div>
+              <div class="temperature">
+                23°C
+              </div>
+            </div>
+            <div class="weather-day">
+              <div class="day">Sat</div>
+              <div class="icon">
+                <i class="fas fa-cloud-rain"></i>
+              </div>
+              <div class="temperature">
+                13°C
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script tpe="text/javascript" src="src/main.js"></script>
+</body>
+</html>
