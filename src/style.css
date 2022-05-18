@@ -5,7 +5,7 @@ body {
 }
 .main-wrap {
   width: 800px;
-  margin: 60px auto;
+  margin: 60px auto 0 auto;
   padding: 30px 18px;
   background-color: rgb(15, 73, 92);
   background-image: url("../img/blue-sky-1330598792xLu.jpg");
@@ -13,6 +13,11 @@ body {
   background-size: cover;
   background-position: top;
   border-radius: 5px;
+}
+.bottom-wrap {
+  width: 800px;
+  margin: 15px auto 60px auto;
+  color: #000000;
 }
 .popular-city-list > ul {
   padding: 0;
